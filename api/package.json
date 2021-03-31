@@ -1,13 +1,15 @@
 {
-  "name": "api",
+  "name": "API",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de venta - API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "https://tupaginaonline.net",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
