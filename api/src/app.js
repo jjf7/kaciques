@@ -8,7 +8,6 @@ import usersRoutes from './routes/user.routes'
 import { createSetting, removeAllProducts, createRoles, createAdmin, removeAllUsers } from './libs/initialSetup'
 import authRoutes from "./routes/auth.routes";
 import Role from './models/Role'
-
 const app = express()
 //removeAllProducts()
 //removeAllUsers();
