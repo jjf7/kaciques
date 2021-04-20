@@ -1,0 +1,61 @@
+POST http://localhost:3001/categories
+Content-Type: application/json
+
+{
+    "title": "Comida"
+}
+
+###
+
+GET http://localhost:3001/categories
+
+
+###
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+    "title": "HARINA PAN PAN",
+    "price": 1.3,
+    "codebar": "123456789",
+    "category": "606bccb4bebbd146d0bbc772"
+}
+
+###
+DELETE http://localhost:3001/products/60788ef592796836306997eb
+
+
+###
+GET http://localhost:3001/products
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwN2RlMjU1ODVhNWU4NDA1YzZmMGM3ZiIsImlhdCI6MTYxODg2Njk5OSwiZXhwIjoxNjE4OTUzMzk5fQ.g9dfcmYiCn0XPGFPV4LKxIQawK-ePJ3pOOeQwreOpUA
+
+###
+GET http://localhost:3001/products/606bd10cd3dcb80348740260
+
+
+###
+PUT http://localhost:3001/products/606bd10cd3dcb80348740260
+Content-Type: application/json
+
+{
+    "title": "Harina Pan",
+    "price": 1.3,
+    "imgUrl": "https://cdn.elnacional.com/wp-content/uploads/2021/02/Harina-PAN-Foto-Harina-PAN.jpg",
+    "category": "606bca2e2ac8b9464caddf90"
+}
+
+###
+
+GET http://localhost:3001/settings
+
+###
+GET http://localhost:3001/users
+
+
+###
+DELETE http://localhost:3001/users/6079da47c674e806d4c4b6a7
+
+
+###
+GET http://localhost:3001/roles/

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root{
+    --primary-color: #422f61;
+    --border-right: #ff1b43;
+    --white: #fff;
+    --black: #111;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.theme-dark {
+    --background-color: #212121;
+    --font-color:#fff;
+    --h1-background: #212121;
+    --h1-font-color: #fff;
+    --background-color-main: #121212;
+    --border-top: #353535;
+}
+
+.theme-light {
+    --background-color: #fff;
+    --font-color:#000;
+    --h1-background: #f9f9f9;
+    --h1-font-color: #000;
+    --border-top: #bfbfbf;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh; 
+}
+
+div.rdt_TableHeader{ display:none }
+
+div.rdt_TableCol_Sortable{
+    font-size:15px;
+    font-weight: 900;
+}
+
+a{ cursor: pointer;}
+
+span {
+    color: var(--font-color)
+}
+
+.containerCustom {
+    display: grid;
+    grid-template-columns: 55px auto auto;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.find {
+    color: var(--font-color)
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.footer > span {
+    text-align: center;
+    font-size: 14px;
+    color: var(--font-color)
+}
+
+.footer  > span a {
+    text-align: center;
+    font-weight: 900;
+    color: var(--font-color)
+}
+
+header {
+    grid-column: 1/4;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    transition: all ease-in-out .3s;
+}
+
+header .logo {
+    font-weight: 900;
+    color: var(--font-color);
+    margin-left: .5rem;
+}
+
+header > .logo > span:nth-child(2n) {
+    margin-left: .5rem;
+    font-weight: bold;
+    
+}
+
+header > .logo > span:last-child {
+    margin-left: .5rem;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+header .user {
+    font-size:14px;
+    color: var(--background-color-main);
+    margin-right: .5rem;
+}
+
+header > .user > span:first-child {
+    font-style: italic;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+
+
+aside {
+    position: relative;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 92vh;
+    background-color: var(--primary-color);
+}
+
+aside > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 51px;
+}
+
+
+aside > div.active {
+    border-right: 3px solid var(--border-right)
+}
+
+aside > div > a {
+    font-size: 22px;
+    color: var(--white)
+}
+
+
+
+aside > div > a span {
+    display: none
+}
+
+aside > div > span:hover, span:focus {
+    display: block
+}
+
+aside > div> img {
+    width: 2rem;
+}
+
+aside > div:last-child{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+aside > div:last-child a{
+    font-weight: bold;
+    color: #222;
+    font-weight: bold
+}
+
+.main {
+    grid-column: 2/4;
+    border-top: .5px solid var(--border-top);
+    background-color: var(--background-color-main);
+    transition: all ease-in-out .3s;
+}
+
+.main > .title-h1 {
+    background-color: var(--h1-background);
+    color: var(--h1-font-color);
+    padding:.9rem;
+}
+
+.content {
+   padding: 2rem;
+   color: var(--font-color)
+}
+
+input[type=text]{
+   border: 0px;
+   border-bottom:1px solid #888585;
+   border-radius:0px;
+}
+
+input[type=password]{
+    border: 0px;
+    border-bottom:1px solid #888585;
+    border-radius:0px;
+ }
+ 
+
+input:focus{
+   outline: none
+ }
+
+.form-control:focus{
+    outline: none
+}
+
+.form-control:active{
+    outline: none
+}
+
+.label{
+    margin-bottom: 0px;
+    display:flex;
+    color: var(--font-color);
+    align-self: flex-end;
+    align-items: center;
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color:#fff
+}
+
+
+.btn-primary:focus, .btn-primary:hover {
+    background-color: var(--primary-color);
+    color:#fff
+}
+
+.containerButtons {
+    display: flex;
+}
+
+.containerButtons > a  {
+    margin-left: 1rem
+}
+
+
+
+
+@media screen and (max-width : 550px){
+
+    .footer {
+        display: none
+    }
+
+    .container {
+        grid-template-columns:auto auto auto;
+        grid-auto-rows: minmax(50px, auto);
+    }
+   
+    aside {
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        grid-column: 1/4;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        right: 0;
+        padding: 10px;
+        justify-content:space-around; 
+    }
+
+    aside > div.active {
+        border-bottom: 2px solid var(--border-right);
+        border-right: 0px
+    }
+ 
+    aside > div:last-child{
+        position: relative;
+        top: 0;
+        left:auto
+    }
+
+    .main {
+        grid-column: 1/4;
+        height:90vh;
+    }
+
+    input[type=text]{
+        height:2rem;
+        width: 100%;
+       border: 0px;
+       border-bottom:1px solid #888585;
+       padding:2px
+    }
+    
+}
