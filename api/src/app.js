@@ -11,6 +11,7 @@ import Role from './models/Role'
 const app = express()
 //removeAllProducts()
 //removeAllUsers();
+import './database'
 createRoles();
 createAdmin();
 createSetting()
