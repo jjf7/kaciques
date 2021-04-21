@@ -1,7 +1,7 @@
 {
   "name": "API",
   "version": "1.0.0",
-  "description": "Sistema de venta - API",
+  "description": "Sistema de venta - API-",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
