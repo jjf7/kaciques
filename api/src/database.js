@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
+console.log('paso por aqui')
 mongoose
-  .connect("mongodb://localhost:27027/bd_store_app", {
+  .connect("mongodb://localhost:27017/bd_store_app", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
