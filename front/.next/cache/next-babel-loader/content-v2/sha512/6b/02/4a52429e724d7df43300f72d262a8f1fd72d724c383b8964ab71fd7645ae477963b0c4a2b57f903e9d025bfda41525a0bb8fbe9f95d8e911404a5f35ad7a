@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function setLocal(user) {\n  window.localStorage.setItem('user', user);\n}\nexport function checkLocal(router) {\n  if (!localStorage.getItem('user')) {\n    router.push('/');\n  } else {\n    return localStorage.getItem('user');\n  }\n}","map":null,"metadata":{},"sourceType":"module"}
