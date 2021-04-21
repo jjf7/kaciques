@@ -1,22 +1,26 @@
 import Category from "../models/Categories";
+
 export const getAllCategories = async (req, res) => {
-  const data = await Category.find();
-  res.status(200).json(data);
+  try {
+    const data = await Category.find();
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
 };
 export const getSingleCategoryById = async (req, res) => {
   const singleCategory = await Category.findById(req.params.id);
   res.status(200).json(singleCategory);
 };
+
 export const newCategory = async (req, res) => {
   const { title } = req.body;
   if (title == "") {
     res.status(500).json("Por favor rellene todos los campos");
   } else {
     try {
-      const newCategory = new Category({
-        title,
-      });
-      await newCategory.save();
+      const newC = new Category({ title });
+      await newC.save();
       res.status(201).json("success");
     } catch (error) {
       res.status(500).json(error.message);
