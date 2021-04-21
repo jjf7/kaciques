@@ -4,4 +4,4 @@ mongoose.connect("mongodb+srv://root:EnNZRwLPzRxKz91Q@cluster0.say68.mongodb.net
     useUnifiedTopology: true,
   })
   .then((db) => console.log("Database is connected..."))
-  .catch((e) => console.error('App starting error:', e))
+  .catch((e) => console.log(e))
