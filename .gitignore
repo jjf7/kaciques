@@ -1,6 +1,6 @@
-admin/node_modules
+api/src
 api/node_modules
 api/.env
-admin/.env
+front/src
 front/node_modules
 front/.env
