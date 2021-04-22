@@ -108,12 +108,12 @@ export default function index() {
 
                   {message === "Encontrado!" ? (
                     <div className="mt-5 find">
-                      <h1> {title}</h1>
-                      <h2 className="mt-5">
+                      <h4> {title}</h4>
+                      <h5 className="mt-5">
                         {" "}
                         Precio: <b>{price}</b>{" "}
                         <span style={{ fontSize: "14px" }}>BsS</span>
-                      </h2>
+                      </h5>
                     </div>
                   ) : (
                     ""
