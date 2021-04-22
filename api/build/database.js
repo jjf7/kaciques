@@ -4,14 +4,11 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
-console.log('paso por aqui');
-
-_mongoose["default"].connect("mongodb://localhost/bd_store_app", {
+_mongoose["default"].connect("mongodb+srv://root:gS6LDd9fk2NFcB49@cluster0.say68.mongodb.net/bd_store_app?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(function (db) {
   return console.log("Database is connected...");
 })["catch"](function (e) {
-  console.error('App starting error:', e);
-  process.exit(1);
+  return console.log(e);
 });

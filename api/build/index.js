@@ -7,5 +7,5 @@ var _app = _interopRequireDefault(require("./app"));
 require("./database");
 
 _app["default"].listen(_app["default"].get('PORT'), function () {
-  console.log('Server on port:: ', _app["default"].get('PORT'));
+  console.log('Server on port: ', _app["default"].get('PORT'));
 });

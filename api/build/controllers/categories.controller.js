@@ -20,27 +20,19 @@ var getAllCategories = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
-            _context.next = 3;
+            _context.next = 2;
             return _Categories["default"].find();
 
-          case 3:
+          case 2:
             data = _context.sent;
             res.status(200).json(data);
-            _context.next = 10;
-            break;
 
-          case 7:
-            _context.prev = 7;
-            _context.t0 = _context["catch"](0);
-            res.status(500).json(_context.t0.message);
-
-          case 10:
+          case 4:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 7]]);
+    }, _callee);
   }));
 
   return function getAllCategories(_x, _x2) {

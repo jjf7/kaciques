@@ -2,4 +2,9 @@ api/src
 api/node_modules
 api/.env
 front/node_modules
+front/components
+front/pages
+front/utils
+front/custom.js
+front/custom.css
 front/.env
