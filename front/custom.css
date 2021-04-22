@@ -249,20 +249,15 @@ input:focus{
     margin-left: 1rem
 }
 
-
-@media screen and (max-width : 625px){
-.titleProduct {
-    font-style: 10px;
+@media screen and (max-width : 1089px){
+    .titleProduct{ font-size:22px}
+    .priceProduct{font-size:20px}
 }
 
-}
 
-@media screen and (max-width : 550px){
-
-    .titleProduct {
-        font-style: 20px;
-    }
-
+@media screen and (max-width : 540px){
+.titleProduct{ font-size:12px}
+    
     .footer {
         display: none
     }
