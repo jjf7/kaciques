@@ -1,6 +1,5 @@
 api/src
 api/node_modules
 api/.env
-front/src
 front/node_modules
 front/.env
