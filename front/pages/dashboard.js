@@ -79,7 +79,7 @@ export default function index() {
             height: "50vh",
           }}
         >
-          <div style={{ width: "50%" }}>
+          <div style={{ width: "70%" }}>
             <div style={{ textAlign: "center" }}>
               <Form.Group as={Row}>
                 <Col sm={12}>
