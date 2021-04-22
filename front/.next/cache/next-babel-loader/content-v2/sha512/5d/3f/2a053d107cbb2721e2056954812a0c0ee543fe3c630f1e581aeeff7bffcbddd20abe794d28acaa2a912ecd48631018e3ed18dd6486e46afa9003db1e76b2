@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Layout from \"../components/Layout\";\nexport default function Faq() {\n  return /*#__PURE__*/_jsx(Layout, {\n    children: /*#__PURE__*/_jsx(\"h3\", {\n      className: \"title-h1\",\n      children: \"Faq\"\n    })\n  });\n}","map":null,"metadata":{},"sourceType":"module"}
