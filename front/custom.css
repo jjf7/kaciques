@@ -250,8 +250,8 @@ input:focus{
 }
 
 @media screen and (max-width : 1089px){
-    .titleProduct{ font-size:22px}
-    .priceProduct{font-size:20px}
+    .titleProduct{ font-size:25px}
+    .priceProduct{font-size:28px}
 }
 
 
