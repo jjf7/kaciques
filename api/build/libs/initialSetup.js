@@ -221,7 +221,8 @@ var createSetting = /*#__PURE__*/function () {
           case 7:
             _context5.next = 9;
             return new _Settings["default"]({
-              dolar: 2334983.55
+              dolar: 2334983.55,
+              moneda: "VES"
             }).save();
 
           case 9:

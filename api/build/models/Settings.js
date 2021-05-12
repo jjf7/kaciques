@@ -8,7 +8,8 @@ exports["default"] = void 0;
 var _mongoose = require("mongoose");
 
 var settingsSchema = new _mongoose.Schema({
-  dolar: Number
+  dolar: Number,
+  moneda: String
 }, {
   timestamps: true,
   versionKey: false
