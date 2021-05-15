@@ -130,7 +130,7 @@ var signin = /*#__PURE__*/function () {
             }
 
             res.status(500).json("Por favor rellene todos los campos");
-            _context2.next = 24;
+            _context2.next = 25;
             break;
 
           case 5:
@@ -178,15 +178,16 @@ var signin = /*#__PURE__*/function () {
               token: token
             };
             res.json(data);
-            _context2.next = 24;
+            _context2.next = 25;
             break;
 
           case 21:
             _context2.prev = 21;
             _context2.t0 = _context2["catch"](5);
             console.log(_context2.t0.message);
+            res.status(500).json(_context2.t0.message);
 
-          case 24:
+          case 25:
           case "end":
             return _context2.stop();
         }
